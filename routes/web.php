@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('conversations', [\App\Http\Controllers\ConversationController::class,'index']);
+Route::get('conversations/{conversation}',[\App\Http\Controllers\ConversationController::class,'show']);
