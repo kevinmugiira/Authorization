@@ -10,7 +10,7 @@ class ConversationController extends Controller
     public function index()
     {
         return view('conversation.index',[
-            'conversations' => Conversation::all()
+            'conversation' => Conversation::all()
         ]);
     }
 

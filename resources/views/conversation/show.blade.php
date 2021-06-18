@@ -5,7 +5,7 @@
 @section('content')
 
     <p>
-        <a href="/conversations"> Back </a>
+        <a href="/conversation/index"> Back </a>
     </p>
 
     <h1>{{ $conversation->title }}</h1>
@@ -18,7 +18,7 @@
 
     <hr>
 
-    @include('conversations.replies')
+    @include('conversation.replies')
 
 
 

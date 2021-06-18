@@ -35,7 +35,7 @@
 
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+                {{ $slot }} @section('content')
             </main>
         </div>
 
